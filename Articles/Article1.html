@@ -375,185 +375,60 @@ Navbar
 
         }
 
-        .
+
         /* ------------------------------------------------ */
+        /* Article media query  */
+        @media screen and (max-width: 850px) {
+            .articleContentBox {
+                flex-direction: column;
+            }
+
+            .articleContent {
+                margin-bottom: 1rem;
+            }
+
+            .articleSuggestion {
+                margin-top: 1rem;
+                margin-left: 0;
+                align-items: center;
+                text-align: center;
+                flex-direction: row;
+                width: 100%;
+                float: left;
+                justify-content: space-between;
+            }
+
+        }
+
+        @media screen and (max-width: 380px) {
+            .articleSuggestion {
+                flex-direction: column;
+            }
+
+            .publisher {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .publisherInfo {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                margin: 1rem 0;
+            }
+
+            .publisherImage {
+                margin-bottom: 1rem;
+                margin-right: 0;
+            }
+
+
+        }
+
         /* --------------------------------------------------- */
 
         /* ----------contact-----------*/
 
-        #contact {
-            width: 100%;
-            height: cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            /* background: url(./Images/Picture1.2.jpg); */
-            background: rgba(0, 0, 0, 0.5) url(./Images/Picture1.2.jpg);
-            background-blend-mode: darken;
-            background-size: cover;
-            background-attachment: fixed;
-        }
-
-        .box7 {
-            width: 90%;
-            height: cover;
-            padding-top: 3rem;
-            align-items: center;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            /* background: rgba(255, 255, 255, 0.534); */
-            background-image: linear-gradient(to bottom right,
-                    rgba(255, 255, 255),
-                    rgba(255, 255, 255));
-            backdrop-filter: blur(5px);
-            border-bottom: 2px solid rgba(0, 0, 0, 0.274);
-            border-right: 2px solid rgba(0, 0, 0, 0.274);
-            border-top: 2px solid rgba(255, 255, 255, 0.5);
-            border-left: 2px solid rgba(255, 255, 255, 0.5);
-        }
-
-        .cma {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            /* flex-wrap: wrap; */
-        }
-
-        .mailnaddress {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            width: 50%;
-            /* padding: 2rem; */
-        }
-
-        .mailnaddress a {
-            display: flex;
-            flex-direction: row;
-            /* padding-top: 0.75rem; */
-            font-size: 2rem;
-        }
-
-        .mailnaddress span {
-            font-size: 1rem;
-            font-family: "poppins";
-            color: #242c6c;
-            margin-top: 1rem;
-        }
-
-        .mailnaddress p {
-            font-size: 1rem;
-            font-family: "poppins";
-            color: #242c6c;
-            text-align: center;
-            width: 50%;
-            /* margin-top: 1rem; */
-        }
-
-        .contacts h2 {
-            font-family: "Montserrat";
-            font-size: 1.5rem;
-            color: #242c6c;
-            align-items: center;
-            margin-top: 2rem;
-        }
-
-        .article_MediaIcons {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .contacts {
-            font-size: 2rem;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            padding: 1rem;
-            /* border-bottom: 0.5px solid #cfab3357; */
-        }
-
-        .quote-btn {
-            padding: 0.5rem 2rem;
-            margin-bottom: 2rem;
-            background: transparent;
-            border-radius: 25px;
-            border: 2px solid #cfab33;
-            color: #cfab33;
-            font-size: 1rem;
-            font-family: "poppins";
-            text-transform: uppercase;
-            transition: 0.4s;
-        }
-
-        .quote-btn:hover {
-            color: #cfab33;
-            background: #242c6c;
-            border: 2px solid #cfab33;
-        }
-
-        .fa {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            /* padding: 2rem; */
-            font-size: 2rem;
-            width: 5rem;
-            text-align: center;
-            text-decoration: none;
-            align-items: center;
-            margin: 2rem 0.5rem;
-            color: #000000;
-        }
-
-        .fa:hover {
-            opacity: 0.7;
-        }
-
-        /* -----------contact media query-------- */
-        @media screen and (max-width: 700px) {
-            .contacts {
-                border-bottom: 0.5px solid #cfab3357;
-            }
-
-            .cma {
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .mailnaddress {
-                width: 80%;
-            }
-
-            .mailnaddress p {
-                width: 100%;
-            }
-
-            .ts_in_sg img {
-                width: 12rem;
-                height: 20rem;
-                padding: 1rem;
-                visibility: visible;
-            }
-
-            .box4-img img {
-                width: 0rem;
-                height: 0rem;
-                padding: 0rem;
-                visibility: hidden;
-            }
-        }
-
-        /* ----------------------------------- */
-
-
-        /* ----------contact-----------*/
         #contact {
             width: 100%;
             height: cover;
@@ -744,8 +619,8 @@ Navbar
                 <li class="Ts_dropDown">
                     <a href="#traffic-sight">TrafficSight™</a>
                     <ul class="dropDown">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#services">Services</a></li>
                         <li><a href="#contact">contact</a></li>
                     </ul>
                 </li>
@@ -766,7 +641,7 @@ Navbar
             <div class="articleContent">
                 <h2 class="articleTopic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, commodi?</h2>
                 <h6 class="subtopic">Lorem ipsum dolor sit amet.</h6>
-                <p class="publishedDate">12/09/2021</p>
+                <p class="publishedDate">13 Dec, 2021</p>
                 <p class="articlewords">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque aliquid quis vel
                     perferendis esse voluptates quos cumque pariatur quo maxime molestiae quas, eum itaque eveniet enim
                     perspiciatis? Nihil vel commodi ex, a suscipit voluptates quam accusamus assumenda magni, iusto
@@ -793,11 +668,10 @@ Navbar
                             </span>
                         </p>
                     </div>
-
                     <ul>
-                        <li><i class="fab fa-linkedin"></i></li>
-                        <li><i class="fab fa-facebook"></i></li>
-                        <li><i class="fab fa-instagram"></i></li>
+                        <li> <a href="#"><i class="fab fa-linkedin"></i></a> </i></li>
+                        <li> <a href="#"><i class="fab fa-facebook"></i></a> </li>
+                        <li> <a href="#"><i class="fab fa-instagram"></i></a> </li>
                     </ul>
                 </div>
             </div>
